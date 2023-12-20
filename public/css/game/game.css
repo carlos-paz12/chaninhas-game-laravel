@@ -1,0 +1,48 @@
+@import url(../app.css);
+
+#game_scene {
+    background: url(../../images/background.jpg) no-repeat;
+    cursor: url(../../images/cursors/hand-2.cur), auto;
+
+    position: relative;
+
+    height: 75vh;
+    width: 80vw;
+}
+
+#game_target {
+    position: absolute;
+
+    bottom: 0;
+
+    user-select: none;
+
+    width: 10vh;
+    height: 12vh;
+}
+
+#game_target:active {
+    cursor: url(../../images/cursors/hand-3.cur), auto;
+}
+
+#game_btn-play {
+    position: relative;
+    background-color: #2feb48;
+    box-shadow: 0px 4px #1d962d;
+    text-shadow: 1px 1px #1d962d;
+}
+
+#game_btn-play:hover {
+    text-shadow: 0px 0px #ffffff;
+}
+
+#game_btn-play:active {
+    top: 4px;
+    box-shadow: 0px 0px #1d962d;
+}
+
+#game_btn-play:disabled {
+    background-color: #2feb4855;
+    box-shadow: 0px 4px #1d962d55;
+    text-shadow: 1px 1px #1d962d55;
+}
